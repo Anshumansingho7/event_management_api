@@ -5,10 +5,6 @@ class EventPolicy < ApplicationPolicy
     user.present?
   end
 
-  def show?
-    user.present?
-  end
-
   def create?
     authenticate_user?
   end
