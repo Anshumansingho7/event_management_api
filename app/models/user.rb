@@ -11,4 +11,5 @@ class User < ApplicationRecord
          :jwt_authenticatable, jwt_revocation_strategy: self
 
   validates :name, :role, presence: true
+  has_many :events, dependent: :destroy
 end
