@@ -1,0 +1,13 @@
+Event Updated!
+
+Hello <%= @booking.user.name %>,
+
+Your booked event "<%= @booking.ticket.event.name %>" has been updated.
+
+New Event Date & Time: <%= @booking.ticket.event.date.strftime("%d %B %Y") %> at <%= @booking.ticket.event.date.strftime("%I:%M %p") %>
+Tickets Booked: <%= @booking.total_count %>
+Total Price: ₹<%= @booking.total_price %>
+
+We recommend checking the latest details on our website.
+
+Thank you for using our service!

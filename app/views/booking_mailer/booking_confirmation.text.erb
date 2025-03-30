@@ -1,0 +1,11 @@
+Booking Confirmed!
+
+Hello <%= @booking.user.name %>,
+
+Your booking for the event <%= @booking.ticket.event.name %> is confirmed.
+
+Event Date & Time: <%= @booking.ticket.event.date.strftime("%d %B %Y") %> at <%= @booking.ticket.event.date.strftime("%I:%M %p") %>  
+Tickets Booked: <%= @booking.total_count %>  
+Total Price: ₹<%= @booking.total_price %>  
+
+Thank you for using our service!

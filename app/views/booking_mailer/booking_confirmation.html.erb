@@ -1,0 +1,10 @@
+<h1>Booking Confirmed!</h1>
+<p>Hello <%= @booking.user.name %>,</p>
+
+<p>Your booking for the event <strong><%= @booking.ticket.event.name %></strong> is confirmed.</p>
+
+<p><strong>Event Date & Time:</strong> <%= @booking.ticket.event.date.strftime("%d %B %Y") %> at <%= @booking.ticket.event.date.strftime("%I:%M %p") %></p>
+<p><strong>Tickets Booked:</strong> <%= @booking.total_count %></p>
+<p><strong>Total Price:</strong> ₹<%= @booking.total_price %></p>
+
+<p>Thank you for using our service!</p>
